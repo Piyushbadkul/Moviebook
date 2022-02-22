@@ -1,0 +1,101 @@
+2022-02-03 12:12:54,935 - django.request - Thread-1 (process_request_thread) -  WARNING - Not Found: /aapi/login/
+2022-02-03 12:13:03,636 - django.request - Thread-1 (process_request_thread) -  WARNING - Method Not Allowed (GET): /api/login/
+2022-02-03 12:16:45,708 - django.request - Thread-4 (process_request_thread) -  ERROR - Internal Server Error: /api/registration/
+Traceback (most recent call last):
+  File "D:\django project\moviebookz\env\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\django project\MOVIEBOOKZ\moviebookz\api\views.py", line 44, in user_registration
+    username = request.POST['username']
+  File "D:\django project\moviebookz\env\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+2022-02-03 12:22:46,089 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-03 12:22:54,021 - django.request - Thread-1 (process_request_thread) -  ERROR - Internal Server Error: /api/registration/
+Traceback (most recent call last):
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django project\moviebookz\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\django project\MOVIEBOOKZ\moviebookz\api\views.py", line 44, in user_registration
+    username = request.POST.get['username']
+TypeError: 'method' object is not subscriptable
+2022-02-03 17:42:31,882 - django.request - Thread-1 (process_request_thread) -  ERROR - Internal Server Error: /api/registration/
+Traceback (most recent call last):
+  File "D:\Python 310\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python 310\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python 310\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\django project\MOVIEBOOKZ\moviebookz\api\views.py", line 48, in user_registration
+    user = User.objects.create_user(username, email, password)
+  File "D:\Python 310\lib\site-packages\django\contrib\auth\models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "D:\Python 310\lib\site-packages\django\contrib\auth\models.py", line 140, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2022-02-03 17:43:14,779 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-03 17:43:19,385 - django.request - Thread-1 (process_request_thread) -  ERROR - Internal Server Error: /api/registration/
+Traceback (most recent call last):
+  File "D:\Python 310\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python 310\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python 310\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\django project\MOVIEBOOKZ\moviebookz\api\views.py", line 44, in user_registration
+    username = request.POST.get['username']
+TypeError: 'method' object is not subscriptable
+2022-02-04 09:17:49,154 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\urls.py changed, reloading.
+2022-02-04 09:20:00,683 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\urls.py changed, reloading.
+2022-02-04 09:20:33,780 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 09:20:48,846 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 09:21:21,156 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 09:22:17,133 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\urls.py changed, reloading.
+2022-02-04 09:22:27,824 - django.request - Thread-3 (process_request_thread) -  WARNING - Method Not Allowed (GET): /api/login/
+2022-02-04 09:22:32,893 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /api/
+2022-02-04 09:22:42,375 - django.request - Thread-5 (process_request_thread) -  WARNING - Method Not Allowed: /api/registration
+2022-02-04 09:22:46,430 - django.request - Thread-7 (process_request_thread) -  WARNING - Method Not Allowed: /api/registration/
+2022-02-04 10:28:15,964 - django.request - Thread-1 (process_request_thread) -  WARNING - Not Found: /
+2022-02-04 10:28:30,756 - django.request - Thread-1 (process_request_thread) -  WARNING - Method Not Allowed (GET): /api/login
+2022-02-04 10:28:41,427 - django.request - Thread-1 (process_request_thread) -  WARNING - Method Not Allowed: /api/registration
+2022-02-04 10:29:08,058 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 10:29:12,003 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 10:30:32,719 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 10:31:56,497 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 10:32:58,934 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\urls.py changed, reloading.
+2022-02-04 10:33:32,432 - django.request - Thread-1 (process_request_thread) -  WARNING - Not Found: /
+2022-02-04 10:33:40,971 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /registration
+2022-02-04 10:33:49,629 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /api.registration/
+2022-02-04 10:33:56,655 - django.request - Thread-5 (process_request_thread) -  WARNING - Method Not Allowed: /api/registration/
+2022-02-04 10:34:50,265 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\api\views.py changed, reloading.
+2022-02-04 10:34:54,676 - django.request - Thread-1 (process_request_thread) -  WARNING - Not Found: /
+2022-02-04 10:35:03,822 - django.request - Thread-3 (process_request_thread) -  WARNING - Method Not Allowed: /api/registration/
+2022-02-04 10:47:45,986 - django.utils.autoreload - MainThread -  INFO - D:\django project\moviebookz\moviebookz\moviebookz\urls.py changed, reloading.
+2022-02-04 14:18:03,009 - django.request - Thread-1 (process_request_thread) -  WARNING - Not Found: /
+2022-02-04 14:25:35,717 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /
+2022-02-04 14:25:44,275 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /api/movie
+2022-02-04 14:25:48,809 - django.request - Thread-3 (process_request_thread) -  WARNING - Not Found: /api/movie/
+2022-02-04 14:26:20,076 - django.request - Thread-5 (process_request_thread) -  WARNING - Not Found: /api/movie/
+2022-02-04 14:26:38,896 - root - Thread-7 (process_request_thread) -  INFO - Users requested for movies in city <City_Name>
